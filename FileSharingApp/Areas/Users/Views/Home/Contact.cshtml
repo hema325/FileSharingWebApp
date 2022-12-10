@@ -1,0 +1,66 @@
+﻿@model ContactViewModel
+@inject IViewLocalizer localizer
+
+<section id="mu-contact">
+			<div class="container">
+				<p class="alert-info d-block"> @TempData["Succee"]</p>
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="mu-contact-area">
+							<!-- Title -->
+							<div class="row justify-content-center">
+								<div class="col-md-4">
+									<div class="display-4">
+										<h2>@localizer["Say Hello"]!</h2>
+									</div>
+								</div>
+							</div>
+								<!-- Start Contact Content -->
+							<div class="mu-contact-content m-4">
+								<div class="row col-12">
+
+									<div class="col-md-12">
+										<div class="mu-contact-form-area">
+											<div id="form-messages"></div>
+											<form asp-action="Contact" class="mu-contact-form ">
+												<div class="form-group mt-2 mb-2">              
+													<input asp-for="Name" class="form-control" placeholder="@localizer["Name"]">
+													<span asp-validation-for="Name" class="text-danger"></span>
+												</div>
+
+												<div class="form-group mt-2 mb-2">  
+													<span class="fa fa-envelope mu-contact-icon"></span>              
+													<input asp-for="Email" class="form-control" placeholder="@localizer["Enter Email"]" required>
+													<span asp-validation-for="Email" class="text-danger"></span>
+												</div>    
+
+												<div class="form-group mt-2 mb-2"> 
+													<span class="fa fa-folder-open-o mu-contact-icon"></span>                
+													<input asp-for="Subject" class="form-control" placeholder="@localizer["Your Subject"]" >
+													<span asp-validation-for="Subject" class="text-danger"></span>
+												</div>
+
+												<div class="form-group mt-2 mb-2">
+													<span class="fa fa-pencil-square-o mu-contact-icon"></span> 
+													<textarea asp-for="Message" class="form-control" placeholder="@localizer["Message"]" ></textarea>
+													<span asp-validation-for="Message" class="text-danger"></span>
+												</div>
+												<button type="submit" class="btn btn-primary col-12 mt-2 mb-2"><span>@localizer["Send Message"]</span></button>
+								        	</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- End Contact Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+</section>
+
+
+
+@section scripts{
+	<partial name="_ValidationScriptsPartial" />
+}

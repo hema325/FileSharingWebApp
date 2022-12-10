@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ListUploadViewModel>
+
+
+    <div class="container">
+   @foreach(var item in Model){
+   <div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+        @if(item.ContentType.Contains("image")){
+                        <img loading="lazy" src="/@item.Url" width="300" height="250" class="card-img">
+                    }
+                    else
+                    {
+                         <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/user-interface-set-part-2/70/doc-512.png" width="300" height="250" class="card-img">
+                    } 
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title mb-4">@item.FileName</h5>
+        <p class="card-text col-6">Type : @item.ContentType</p>
+         @{
+                        var kb = 1024;
+                        var mb = 1048576;
+                        if (item.FileSize < kb)
+                        {
+                            <p class="card-text">Size : @Math.Floor(item.FileSize) byte</p>
+                        }
+                        else if (item.FileSize < mb) 
+                        {
+                            <p class="card-text">Size : @Math.Floor(item.FileSize/kb) kilo byte</p>
+                        }
+                        else
+                        {
+                            <p class="card-text">Size : @Math.Floor(item.FileSize/mb) Miga byte</p>
+                        }
+         }
+        <p class="card-text"><small class="text-muted">Uploaded Date : @item.UploadedDateTime</small></p>
+        <div class="row justify-content-between">
+         <p class="card-text col-8"><small class="text-muted">DownLoaded @item.NumberOfDownLoads times</small></p>
+         <a asp-controller="Upload" asp-action="DownLoad" asp-route-Id="@item.Id" class="btn btn-primary col-4">DownLoad</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  }
+  <div class="row justify-content-center">
+       @if(ViewBag.pageNum>1){
+      <a asp-action=@(!string.IsNullOrEmpty(ViewBag.fileName)? "Search":"Explore") asp-route-fileName=@ViewBag.fileName asp-route-pageNum="@(ViewBag.pageNum - 1)" class="btn btn-outline-primary col-1 m-2">Previous</a>
+      }
+      @if(!ViewBag.isLastPage){
+      <a asp-action=@(!string.IsNullOrEmpty(ViewBag.fileName)?"Search":"Explore") asp-route-fileName=@ViewBag.fileName asp-route-pageNum="@(ViewBag.pageNum + 1)" class="btn btn-outline-primary col-1 m-2">Next</a>
+      }
+  </div>
+  </div>
+
+

@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Images\**" />
+    <Content Remove="wwwroot\Images\**" />
+    <EmbeddedResource Remove="wwwroot\Images\**" />
+    <None Remove="wwwroot\Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="CouchbaseNetClient" Version="3.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\Identity\Views\Account\Login.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\Identity\Views\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Resources\Areas\Admin\" />
+    <Folder Include="Resources\Areas\Users\" />
+    <Folder Include="wwwroot\Files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="wwwroot\Admin\dist\css\adminlte.css.map" />
+    <None Include="wwwroot\Admin\dist\css\adminlte.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.components.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.components.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.core.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.core.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.extra-components.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.extra-components.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.light.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.light.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.pages.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.pages.min.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.plugins.css.map" />
+    <None Include="wwwroot\Admin\dist\css\alt\adminlte.plugins.min.css.map" />
+    <None Include="wwwroot\Admin\dist\js\adminlte.js" />
+    <None Include="wwwroot\Admin\dist\js\adminlte.js.map" />
+    <None Include="wwwroot\Admin\dist\js\adminlte.min.js" />
+    <None Include="wwwroot\Admin\dist\js\adminlte.min.js.map" />
+    <None Include="wwwroot\Admin\dist\js\demo.js" />
+    <None Include="wwwroot\Admin\dist\js\pages\dashboard.js" />
+    <None Include="wwwroot\Admin\dist\js\pages\dashboard2.js" />
+    <None Include="wwwroot\Admin\dist\js\pages\dashboard3.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\SharedResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SharedResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\SharedResources.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\SharedResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

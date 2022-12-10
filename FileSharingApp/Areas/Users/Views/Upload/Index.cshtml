@@ -1,0 +1,85 @@
+﻿@using System.Security.Claims
+@model IEnumerable<ListUploadViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>My Uploads</h1>
+
+    <p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table ">
+    <thead>
+        <tr>
+             <th>
+                Image
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.UploadedDateTime)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.FileSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.NumberOfDownLoads)
+            </th>
+                <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                  <td >
+                 @if(item.ContentType.Contains("image")){
+                         <img src="/@Html.DisplayFor(modelItem=>item.Url)" width="70" height="70" class="img-thumbnail" alt="NotFound"/>
+                 }
+                 else
+                 {
+                         <img src="https://cdn4.iconfinder.com/data/icons/user-interface-set-part-2/70/doc-512.png" width="70" height="70" class="card-img">
+                 } 
+               
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=> item.UploadedDateTime)
+            </td>
+             <td>
+                    @{
+                        var kb = 1024;
+                        var mb = 1048576;
+                        if (item.FileSize < kb)
+                        {
+                                <span>@Math.Floor(item.FileSize) b</span>
+                        }
+                        else if (item.FileSize < mb) 
+                        {
+                                <span>@Math.Floor(item.FileSize/kb) kb</span>
+                        }
+                        else
+                        {
+                                <span>@Math.Floor(item.FileSize/mb) Mb</span>
+                        }
+                    }
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem=>item.NumberOfDownLoads)
+            </td>
+            <td>
+               <a asp-action="Delete" class="btn btn-danger" asp-route-Id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

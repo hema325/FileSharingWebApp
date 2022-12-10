@@ -1,0 +1,36 @@
+﻿@model IEnumerable<UserAdminViewModel>
+
+@{
+    TempData["Title"] = "Blocked users";
+}
+    <!-- Main content -->
+    <section class="content">
+             <!-- /.card-body -->
+         <div class="card card-solid">
+
+             <div class="row">
+         @foreach(var user in Model)
+        {
+            <partial name="CardPartial" model="@user"/>
+        }
+
+        </div>
+
+        <div class="card-footer">
+          <nav aria-label="Contacts Page Navigation">
+ <ul class="pagination justify-content-center m-0">
+               @if(ViewBag.PageNum>1){
+              <li class="page-item"><a class="page-link" asp-action="BlockedUsers" asp-route-pageNum="@(ViewBag.PageNum -1)">Prev</a></li>
+              }
+              <li class="page-item active"><a class="page-link active" asp-action="BlockedUsers" asp-route-pageNum="@(ViewBag.PageNum)">@(ViewBag.PageNum)</a></li>
+              @if(!ViewBag.IsLastPage){
+              <li class="page-item"><a class="page-link" asp-action="BlockedUsers" asp-route-pageNum="@(ViewBag.PageNum+1)">Next</a></li>
+              }
+            </ul>
+          </nav>
+        </div>
+        <!-- /.card-footer -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->

@@ -1,0 +1,17 @@
+﻿
+
+ <nav aria-label="Contacts Page Navigation">
+ <ul class="pagination justify-content-center m-0">
+               @if(ViewBag.PageNum>=2){
+              <li class="page-item"><a class="page-link" href="@Context.Request.Path?pageNum=@(ViewBag.PageNum -1)&searchInput=@ViewBag.SearchInput">Prev</a></li>
+              }
+              <li class="page-item active"><a class="page-link active" href="@Context.Request.Path?pageNum=@(ViewBag.PageNum)&searchInput=@ViewBag.SearchInput">@(ViewBag.PageNum)</a></li>
+              @if(!ViewBag.IsLastPage){
+              <li class="page-item"><a class="page-link" href="@Context.Request.Path?pageNum=@(ViewBag.PageNum +1)&searchInput=@ViewBag.SearchInput">Next</a></li>
+              }
+ </ul>
+          </nav>
+
+
+
+

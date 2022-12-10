@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ContactUsAdminViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Fixed Header Table</h3>
+
+                <div class="card-tools">
+                    <form asp-action="Search">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                     
+                    <input type="text" name="SearchInput"  class="form-control float-right" placeholder="Search">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                  </form>
+                </div>
+                
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-head-fixed text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>User Name</th>
+                      <th>Subject</th>
+                      <th>Date</th>
+                      <th>Is Read</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      @foreach(var msg in Model){
+                    <tr>
+                      <td>@msg.Id</td>
+                      <td>@msg.UserName</td>
+                       <td>@msg.Subject</td>
+                      <td class="moment-date">@msg.SendDate</td>
+                      <td><span class="tag tag-success">@msg.IsRead</span></td>
+                      <td>
+                          <a asp-action="MarkAsRead" asp-route-id="@msg.Id" asp-route-pageNum="@ViewBag.PageNum" asp-route-searchInput="@ViewBag.SearchInput" class="btn btn-primary">Mark As Read</a>
+                          <a asp-action="Details" asp-route-id="@msg.Id" class="btn btn-secondary">Details</a>
+                          <a asp-action="Delete" asp-route-id="@msg.Id" asp-route-pageNum="@ViewBag.PageNum" asp-route-searchInput="@ViewBag.SearchInput" class="btn btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                      }
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      <partial name="PaginationPartial" />

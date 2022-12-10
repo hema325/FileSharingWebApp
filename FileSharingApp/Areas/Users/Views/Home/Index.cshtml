@@ -1,0 +1,49 @@
+﻿@inject IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@localizer["Search File"]</h1>
+    <div class="row justify-content-center">
+    <form asp-controller="Upload" asp-action="Search" class=" col-10">
+       <div class="input-group input-group-lg">
+  <input name="fileName"
+    type="text"
+    class="form-control"
+    placeholder="@localizer["Search File"]"
+    aria-label="Recipient's username"
+    aria-describedby="button-addon2"
+  />
+  <button class="btn btn-outline-primary" type="submit" id="button-addon2" data-mdb-ripple-color="dark">
+    @localizer["Search"]
+  </button>
+</div>
+    </form>
+    </div>
+</div>
+
+<div class="text-center m-4">
+<h1 class="display-4">@localizer["Popular"]</h1>
+</div>
+
+<div class="row">
+@foreach(var item in ViewBag.PopularFiles){
+    <div class="card m-3" style="width: 18rem;">
+        @if(item.ContentType.ToLower().Contains("image")){
+            <img loading="lazy" class="card-img-top" width="200" height="150" src="/@item.Url" alt="Not Found">
+        }
+        else
+        {
+            <img loading="lazy" class="card-img-top" width="200" height="150" src="https://cdn4.iconfinder.com/data/icons/user-interface-set-part-2/70/doc-512.png" alt="Not Found">
+        }
+        <div class="card-body">
+    <h5 class="card-title">item.FileName</h5>
+    <p class="card-text col-12">@localizer["Type"] : @item.ContentType</p>
+         <p class="card-text col-12"><small class="text-muted">@localizer["DownLoades"] : @item.NumberOfDownLoads</small></p>
+            <a asp-controller="Upload" asp-action="DownLoad" asp-route-Id="@item.Id" class="btn btn-primary col-12">@localizer["DownLoad"]</a>
+  </div>
+</div>
+}
+</div>
+

@@ -1,0 +1,30 @@
+﻿@model ContactUsAdminViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+     <!-- Main content -->
+    <section class="content">
+             <!-- /.card-body -->
+         <div class="card card-solid">
+        
+             <div class="mt-4 mb-4 ml-2 p-2">
+             <div class="row">
+                 <p class="col-4">User Name</p>
+                 <p class="col-8">@Model.UserName</p>
+             </div>
+         <div class="row">
+                 <p class="col-4">Subject</p>
+                 <p class="col-8">@Model.Subject</p>
+             </div>
+             <div class="row">
+                 <p class="col-4">Message</p>
+                 <p class="col-8">@Model.Message</p>
+             </div>
+             </div>
+        </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->

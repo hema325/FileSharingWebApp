@@ -1,0 +1,26 @@
+﻿@model IEnumerable<UserAdminViewModel>
+
+    <!-- Main content -->
+    <section class="content">
+             <!-- /.card-body -->
+         <div class="card card-solid">
+
+        <div class="row">
+         @foreach(var user in Model)
+        {
+            <partial name="CardPartial" model="@user"/>
+        }
+
+        </div>
+
+        
+
+        <div class="card-footer">
+            <partial name="PaginationPartial" />
+         
+        </div>
+        <!-- /.card-footer -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->
