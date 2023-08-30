@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Asp.net Core MVC\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj": {}
+    "D:\\ASP .NET Core\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj": {}
   },
   "projects": {
-    "D:\\Asp.net Core MVC\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj": {
+    "D:\\ASP .NET Core\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Asp.net Core MVC\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj",
+        "projectUniqueName": "D:\\ASP .NET Core\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj",
         "projectName": "FileSharingApp",
-        "projectPath": "D:\\Asp.net Core MVC\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj",
+        "projectPath": "D:\\ASP .NET Core\\FileSharingApp\\FileSharingApp\\FileSharingApp.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\Asp.net Core MVC\\FileSharingApp\\FileSharingApp\\obj\\",
+        "outputPath": "D:\\ASP .NET Core\\FileSharingApp\\FileSharingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,7 +93,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -105,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

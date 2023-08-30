@@ -5,148 +5,149 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FileSharingApp
 build_property.RootNamespace = FileSharingApp
-build_property.ProjectDir = D:\Asp.net Core MVC\FileSharingApp\FileSharingApp\
+build_property.ProjectDir = D:\ASP .NET Core\FileSharingApp\FileSharingApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Asp.net Core MVC\FileSharingApp\FileSharingApp
+build_property.MSBuildProjectDirectory = D:\ASP .NET Core\FileSharingApp\FileSharingApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/ContactUs/Details.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/ContactUs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/ContactUs/Index.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/ContactUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/ManagingUsers/BlockedUsers.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/ManagingUsers/BlockedUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFuYWdpbmdVc2Vyc1xCbG9ja2VkVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/ManagingUsers/Index.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/ManagingUsers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFuYWdpbmdVc2Vyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/CardPartial.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/CardPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENhcmRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/PaginationPartial.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/PaginationPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFBhZ2luYXRpb25QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Admin/Views/_ViewStart.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/AddPasswordPartial.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/AddPasswordPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxBZGRQYXNzd29yZFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ChangePaswwordPartial.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ChangePaswwordPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDaGFuZ2VQYXN3d29yZFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ConfirmEmail.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ForgotPassword.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/Login.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ManageAccount.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ManageAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxNYW5hZ2VBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/Register.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ResetPassword.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/UserInformation.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/Account/UserInformation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxVc2VySW5mb3JtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/_ViewImports.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Identity/Views/_ViewStart.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Identity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Contact.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Index.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Privacy.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Create.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcVXBsb2FkXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Delete.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcVXBsb2FkXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Index.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcVXBsb2FkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Search.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/Upload/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcVXBsb2FkXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/_ViewImports.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Areas/Users/Views/_ViewStart.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Areas/Users/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Views/Shared/Error.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Views/_ViewImports.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Views/_ViewStart.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net Core MVC/FileSharingApp/FileSharingApp/Views/Shared/_Layout.cshtml]
+[D:/ASP .NET Core/FileSharingApp/FileSharingApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lrknbwjae5

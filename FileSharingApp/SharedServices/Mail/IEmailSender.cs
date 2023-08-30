@@ -1,4 +1,4 @@
-﻿using FileSharingApp.SharedData;
+﻿using FileSharingApp.Models;
 using System.Net.Mail;
 
 namespace FileSharingApp.Services.Mail

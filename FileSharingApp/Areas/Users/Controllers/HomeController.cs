@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FileSharingApp.Areas.Identity.Controllers;
-using FileSharingApp.Areas.Identity.Data;
 using FileSharingApp.Constraints;
 using FileSharingApp.Hubs;
 using FileSharingApp.Models;
 using FileSharingApp.RepositoryPattern.IRepository;
 using FileSharingApp.Services.Mail;
-using FileSharingApp.SharedData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
@@ -22,11 +20,11 @@ namespace FileSharingApp.Areas.Users.Controllers
     public class HomeController : UsersBaseController
     {
         private readonly ILogger<AccountController> _logger;
-        private readonly IUsersUnitOfWork ufw;
+        private readonly IUnitOfWork ufw;
         private readonly IMapper mapper;
         private readonly IHubContext<Notifications> hubContext;
         private readonly UserManager<ApplicationUser> userManager;
-        public HomeController(ILogger<AccountController> logger, IUsersUnitOfWork ufw, IMapper mapper,IHubContext<Notifications> hubContext,UserManager<ApplicationUser> userManager)
+        public HomeController(ILogger<AccountController> logger, IUnitOfWork ufw, IMapper mapper,IHubContext<Notifications> hubContext,UserManager<ApplicationUser> userManager)
         {
             _logger = logger;
             this.ufw = ufw;

@@ -46,7 +46,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Resources\Areas\Admin\" />
     <Folder Include="Resources\Areas\Users\" />
     <Folder Include="wwwroot\Files\" />

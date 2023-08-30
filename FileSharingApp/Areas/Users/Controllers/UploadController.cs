@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using FileSharingApp.Areas.Users.Data;
-using FileSharingApp.Data;
 using FileSharingApp.Models;
 using FileSharingApp.RepositoryPattern.IRepository;
 using Microsoft.AspNetCore.Authorization;
@@ -15,12 +13,12 @@ namespace FileSharingApp.Areas.Users.Controllers
     [Area("Users")]
     public class UploadController : UsersBaseController
     {
-        private readonly IUsersUnitOfWork ufw;
+        private readonly IUnitOfWork ufw;
         private readonly IWebHostEnvironment webHostEnvironment;
         private readonly IMapper mapper;
         private string userId { get { return User.FindFirstValue(ClaimTypes.NameIdentifier); } }
 
-        public UploadController(IUsersUnitOfWork ufw, IWebHostEnvironment webHostEnvironment, IMapper mapper)
+        public UploadController(IUnitOfWork ufw, IWebHostEnvironment webHostEnvironment, IMapper mapper)
         {
             this.ufw = ufw;
             this.webHostEnvironment = webHostEnvironment;

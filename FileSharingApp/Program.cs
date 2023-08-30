@@ -1,9 +1,9 @@
-using FileSharingApp.Areas.Admin;
-using FileSharingApp.Areas.Identity.Data;
-using FileSharingApp.Areas.Users;
 using FileSharingApp.Data;
 using FileSharingApp.DataBaseInitializer;
 using FileSharingApp.Hubs;
+using FileSharingApp.Models;
+using FileSharingApp.RepositoryPattern;
+using FileSharingApp.RepositoryPattern.IRepository;
 using FileSharingApp.Services.Mail;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,8 +14,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews().AddViewLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddTransient<IEmailSender, EmailSender>();
-builder.Services.AddAdminServices();
-builder.Services.AddUsersServices();
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedEmail = true;
@@ -39,6 +37,9 @@ builder.Services.AddAuthentication()
     options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
 });
 builder.Services.AddSignalR();
+
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

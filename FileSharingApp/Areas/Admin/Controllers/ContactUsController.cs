@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using FileSharingApp.Areas.Admin.AdminRepositoryPattern.IRepository;
 using FileSharingApp.Areas.Admin.Models;
+using FileSharingApp.RepositoryPattern.IRepository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileSharingApp.Areas.Admin.Controllers
 {
     public class ContactUsController : AdminBaseController
     {
-        private readonly IAdminUnitOfWork ufw;
+        private readonly IUnitOfWork ufw;
         private readonly IMapper mapper;
 
-        public ContactUsController(IAdminUnitOfWork ufw,IMapper mapper)
+        public ContactUsController(IUnitOfWork ufw,IMapper mapper)
         {
             this.ufw = ufw;
             this.mapper = mapper;

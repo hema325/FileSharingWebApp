@@ -38,7 +38,7 @@
             <img loading="lazy" class="card-img-top" width="200" height="150" src="https://cdn4.iconfinder.com/data/icons/user-interface-set-part-2/70/doc-512.png" alt="Not Found">
         }
         <div class="card-body">
-    <h5 class="card-title">item.FileName</h5>
+    <h5 class="card-title">@item.FileName</h5>
     <p class="card-text col-12">@localizer["Type"] : @item.ContentType</p>
          <p class="card-text col-12"><small class="text-muted">@localizer["DownLoades"] : @item.NumberOfDownLoads</small></p>
             <a asp-controller="Upload" asp-action="DownLoad" asp-route-Id="@item.Id" class="btn btn-primary col-12">@localizer["DownLoad"]</a>

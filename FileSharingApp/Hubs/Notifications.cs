@@ -7,6 +7,7 @@ namespace FileSharingApp.Hubs
         public override Task OnConnectedAsync()
         {
             Context.Items.Add(Context.UserIdentifier, Context.ConnectionId);
+           
             return base.OnConnectedAsync();
         }
 

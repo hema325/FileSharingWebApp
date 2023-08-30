@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using FileSharingApp.Areas.Admin.AdminRepositoryPattern.IRepository;
 using FileSharingApp.Areas.Admin.Models;
 using FileSharingApp.Constraints;
+using FileSharingApp.RepositoryPattern.IRepository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileSharingApp.Areas.Admin.Controllers
 {
     public class ManagingUsersController : AdminBaseController
     {
-        private readonly IAdminUnitOfWork ufw;
+        private readonly IUnitOfWork ufw;
         private readonly IMapper mapper;
-        public ManagingUsersController(IAdminUnitOfWork ufw,IMapper mapper)
+        public ManagingUsersController(IUnitOfWork ufw,IMapper mapper)
         {
             this.ufw = ufw;
             this.mapper = mapper;

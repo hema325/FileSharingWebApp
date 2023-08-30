@@ -1,6 +1,6 @@
-﻿using FileSharingApp.Areas.Identity.Data;
-using FileSharingApp.Constraints;
+﻿using FileSharingApp.Constraints;
 using FileSharingApp.Data;
+using FileSharingApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

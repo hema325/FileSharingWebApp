@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using FileSharingApp.Areas.Identity.Data;
 using FileSharingApp.Areas.Identity.Models;
 using FileSharingApp.Constraints;
+using FileSharingApp.Models;
 using FileSharingApp.Resources;
 using FileSharingApp.Services.Mail;
 using Microsoft.AspNetCore.Authentication;
